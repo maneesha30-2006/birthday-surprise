@@ -82,44 +82,14 @@ justify-content:center;
 .letter-container img{
 margin-right:20px;
 }
-
 #final{
+color:white;
 position:relative;
-width:100vw;
-height:100vh;
 overflow:hidden;
-background:black;
-}
-
-/* Blurred background */
-#final::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
 background:url('img2.jpg') no-repeat center center;
 background-size:cover;
-filter:blur(8px);
-z-index:0;
 }
 
-/* Main image (no crop) */
-#final::after{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:url('img2.jpg') no-repeat center center;
-background-size:contain;
-background-repeat:no-repeat;
-z-index:1;
-}
-
-/* Content on top */
 .final-content{
 position:absolute;
 bottom:40px;
@@ -127,10 +97,8 @@ left:50%;
 transform:translateX(-50%);
 text-align:center;
 width:100%;
-z-index:2;
 }
 
-/* Confetti */
 .confetti{
 position:absolute;
 width:8px;
@@ -138,12 +106,9 @@ height:12px;
 top:-20px;
 animation:fall linear forwards;
 }
-
 @keyframes fall{
 to{transform:translateY(100vh) rotate(360deg);}
 }
-
-/* Fade animation */
 .fadePage{
 opacity:0;
 animation:fadePageAnim 2s ease forwards;
