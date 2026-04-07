@@ -7,11 +7,10 @@
 
 <style>
 body{
-margin: 20px;
-font-family:Arial;
-overflow:hidden;
+margin: 0;
+padding: 0;
+    overflow:hidden;
 }
-
 .page{
 display:none;
 width:100vw;
@@ -20,8 +19,10 @@ justify-content:center;
 align-items:center;
 flex-direction:column;
 text-align:center;
-background:url("background.png") no-repeat center center fixed;
+
+background:url("background.png") no-repeat center center;
 background-size:cover;
+background-attachment:fixed;
 }
 
 button{
@@ -85,11 +86,15 @@ margin-right:20px;
 #final{
 color:white;
 position:relative;
+width:100vw;
+height:100vh;
 overflow:hidden;
+
 background:url('img2.jpg') no-repeat center center;
 background-size:cover;
+background-position:center;
+background-attachment:fixed;
 }
-
 .final-content{
 position:absolute;
 bottom:40px;
@@ -437,7 +442,7 @@ Itlu,<br>
 <div class="page" id="gifts">
 <h2>Choose your gift 🎁</h2>
 <button onclick="alert('Hug 🤗- Distance Problem')">Hug</button>
-<button onclick="alert('Chocolate 🍫- I will when we meet')">Chocolate</button>
+<button onclick="alert('Chocolate 🍫- I will give it to you when we meet')">Chocolate</button>
 <button onclick="openVideo()">Special Surprise 🎬</button>
 </div>
 
