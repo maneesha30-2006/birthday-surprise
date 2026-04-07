@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>For You❤️</title>
+<title>For Nibbi ❤️</title>
 
 <style>
 body{
@@ -20,11 +20,10 @@ justify-content:center;
 align-items:center;
 flex-direction:column;
 text-align:center;
-
-background:url("background.png") no-repeat center center;
+background:url("background.png") no-repeat center center fixed;
 background-size:cover;
-background-attachment:fixed;
 }
+
 button{
 padding:10px 20px;
 margin:10px;
@@ -123,14 +122,7 @@ to{opacity:1;}
 color:black;
 font-weight:bold;
 }
-  .myVideo{
-  width: 60%;
-  max-width: 500px;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 12px;
-}
+  .myVideo{ width: 60%; max-width: 500px; height: auto; display: block; margin: 20px auto; border-radius: 12px; }
 </style>
 
 <script>
@@ -437,8 +429,8 @@ Itlu,<br>
 
 <div class="page" id="gifts">
 <h2>Choose your gift 🎁</h2>
-<button onclick="alert('Hug 🤗- Distance Problem')">Hug</button>
-<button onclick="alert('Chocolate 🍫- I will when we meet')">Chocolate</button>
+<button onclick="alert('Hug 🤗')">Hug</button>
+<button onclick="alert('Chocolate 🍫')">Chocolate</button>
 <button onclick="openVideo()">Special Surprise 🎬</button>
 </div>
 
@@ -448,9 +440,7 @@ Itlu,<br>
 
 <div class="page" id="video">
 <h2>Special Gift🎬</h2>
-<video controls class="myVideo">
-<source src="video.mp4">
-</video>
+<video controls class="myVideo"> <source src="video.mp4"> </video>
 <button onclick="show('notice')">Next</button>
 </div>
 
