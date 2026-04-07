@@ -74,13 +74,15 @@ animation:fall linear forwards;
 to{transform:translateY(100vh) rotate(360deg);}
 }
 
-/* ✅ FINAL PAGE FIX (TOP VISIBLE) */
+/* ✅ FINAL PAGE (NO TOP CUT) */
 #final{
 color:white;
 position:relative;
 overflow:hidden;
-background:url('img2.jpg') no-repeat top center; /* 👈 MAIN FIX */
-background-size:cover;
+
+background:url('img2.jpg') no-repeat top center;
+background-size:100% auto;   /* 👈 NO CUT */
+background-color:black;      /* fills bottom space */
 }
 
 /* Final content */
